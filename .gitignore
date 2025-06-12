@@ -1,0 +1,8 @@
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.lock.hcl
+
+# SSH Keys
+assignmentkey1
+assignmentkey1.pub
