@@ -22,8 +22,8 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1  
       - name: Build and Push Webapp Image  
         run: |  
-          docker build -t ${{ steps.ecr-login.outputs.registry }}/webapp:latest .  
-          docker push ${{ steps.ecr-login.outputs.registry }}/webapp:latest  
+          docker build -t ${{ steps.ecr-login.outputs.registry }}/webapp:v2 .  
+          docker push ${{ steps.ecr-login.outputs.registry }}/webapp:v2  
       - name: Build and Push MySQL Image  
         run: |  
           docker build -t ${{ steps.ecr-login.outputs.registry }}/mysql:latest -f Dockerfile_mysql .  
